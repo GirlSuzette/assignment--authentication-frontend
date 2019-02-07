@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 *{
-font-family: 'Ubuntu', sans-serif;
+  font-family: 'Kaushan Script', cursive;
 }
 .App {
   text-align: center;
@@ -40,6 +40,7 @@ a.NavMenu{
   color: aliceblue;
   padding-right: 10px;
   font-weight: bold;
+  font-size: 22px;
 }
 
 a.side {

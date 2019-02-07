@@ -46,10 +46,10 @@ class Menu extends React.Component {
     };
     handleLogout = () => {
         const { history } = this.props;
-    
+
         localStorage.removeItem("token");
         history.push("/");
-      }
+    }
 
     render() {
         const AppBarStyles = {
@@ -67,12 +67,13 @@ class Menu extends React.Component {
                         <MenuIcon />
                     </IconButton>
                     <Typography style={AppBarStyles} variant="h6" color="inherit">
-                        Books
+                        <Link className='NavMenu' to='/'>Books</Link >
+
                     </Typography>
 
                     <Link className='NavMenu' to='/signup'>Sign Up</Link >
                     <Link className='NavMenu' to='/login'>Log In</Link >
-                    <button className='myButton ' onClick={ this.handleLogout }>Logout</button>
+                    <button className='myButton ' onClick={this.handleLogout}>Logout</button>
 
 
                 </Toolbar>
